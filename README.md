@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Abra19/layout-designer-project-59/workflows/hexlet-check/badge.svg)](https://github.com/Abra19/layout-designer-project-59/actions)
 
 ### Project Description:
-In this project we create a Chat-mesendger adaptive pages.
+In this project we create an adaptive Chat Messenger's pages.
 
 ### Project used:
 * Customized Bootstrap

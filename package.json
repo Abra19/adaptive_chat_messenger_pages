@@ -2,7 +2,7 @@
   "name": "layout-designer-project-chat-messenger",
   "version": "1.0.0",
   "description": "Chat mesenger on HTML5/CSS3 build with Gulp",
-  "main": "index.html",
+  "main": "extra-small-quicksand.surge.sh",
   "scripts": {
     "develop": "npx gulp dev",
     "build": "npx gulp build",
