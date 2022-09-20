@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "npx gulp dev",
     "build": "npx gulp build",
-    "deploy": "npx surge ./build/extra-small-quicksand.surge.sh",
+    "deploy": "npx surge ./build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
