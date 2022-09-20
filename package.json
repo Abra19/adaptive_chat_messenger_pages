@@ -2,10 +2,11 @@
   "name": "layout-designer-project-chat-messenger",
   "version": "1.0.0",
   "description": "Chat mesenger on HTML5/CSS3 build with Gulp",
-  "main": "extra-small-quicksand.surge.sh",
+  "main": "index.html",
   "scripts": {
     "develop": "npx gulp dev",
     "build": "npx gulp build",
+    "deploy": "npx surge ./build/extra-small-quicksand.surge.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

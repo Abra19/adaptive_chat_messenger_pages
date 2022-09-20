@@ -10,3 +10,6 @@ build:
 
 develop:
 	npm run develop
+
+deploy:
+	npm run deploy
