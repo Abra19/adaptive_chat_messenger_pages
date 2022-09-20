@@ -11,7 +11,7 @@ In this project we create an adaptive Chat Messenger's pages.
 * PUG
 
 
-### [View page](extra-small-quicksand.surge.sh)
+### [View page](http://extra-small-quicksand.surge.sh)
 ### To get started
 
 1. Clone git repo: `git clone git@github.com:Abra19/layout-designer-project-59.git`
