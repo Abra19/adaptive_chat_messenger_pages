@@ -1,0 +1,41 @@
+{
+  "name": "layout-designer-project-chat-messenger",
+  "version": "1.0.0",
+  "description": "Chat mesenger on HTML5/CSS3 build with Gulp",
+  "main": "index.html",
+  "scripts": {
+    "develop": "npx gulp dev",
+    "build": "npx gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abra19/layout-designer-project-59.git"
+  },
+  "author": "Elena Abrarova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abra19/layout-designer-project-59/issues"
+  },
+  "homepage": "https://github.com/Abra19/layout-designer-project-59#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "htmllint": "^0.8.0",
+    "sass": "^1.54.9",
+    "stylelint": "^14.12.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^28.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.3.0",
+    "surge": "^0.23.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
