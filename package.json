@@ -4,7 +4,7 @@
   "description": "Chat mesenger on HTML5/CSS3 build with Gulp",
   "main": "index.html",
   "scripts": {
-    "develop": "npx gulp dev",
+    "develop": "npx gulp develop",
     "build": "npx gulp build",
     "deploy": "npx surge ./build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Abra19/layout-designer-project-59#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
