@@ -1,5 +1,33 @@
 @import "./general/variables.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./components/header.scss";
 @import "./components/main.scss";
+@import "./components/header.scss";
+@import "./components/contact.scss";
+@import "./components/avatar.scss";
+@import "./general/mixins.scss";
 
+.overflow-list {
+  overflow-y: scroll;
+  height: calc(100vh - 280px);
+  @include hide-scrollbar;
+}
+
+.order-header {
+  order: 2;
+}
+
+@include media-breakpoint-up(md) {
+  .order-header {
+    order: 1;
+  }
+}
+
+.order-left {
+  order: 1;
+}
+
+@include media-breakpoint-up(md) {
+  .order-left {
+    order: 2;
+  }
+}

@@ -4,16 +4,12 @@ body {
   overflow-y: hidden;
 }
 
-.mt-3r {
-  margin-top: 3rem;
+.br-1 {
+  border-radius: 0;
 }
 
-.mx-1_5r {
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
-}
-
-.main-decor {
-  border-radius: 1rem;
-  background-color: $white;
+@include media-breakpoint-up(md) {
+  .br-1 {
+    border-radius: 1rem;
+  }
 }

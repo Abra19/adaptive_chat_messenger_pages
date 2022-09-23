@@ -1,8 +1,21 @@
-const { src, dest, series, watch } = require('gulp');
+const { src, dest, series, parallel, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const pug = require('gulp-pug');
+const svgSprite = require('gulp-svg-sprite');
+const config = {
+  mode: {
+    shape: {
+      dimension: {
+        attributes: false
+      }
+    },
+    stack: {
+        sprite: "../sprite.svg"
+    }
+},
+};
 const browserSync = require('browser-sync').create();
 
 const browserSyncJob = () => {
@@ -13,6 +26,17 @@ const browserSyncJob = () => {
   watch('app/scss/**/*.scss', buildCss);
   watch('app/pug/**/*.pug', buildHtml);
 };
+
+const makeSpriteSvg = () => {
+	return src('app/imgs/icons/*.svg')
+    .pipe(svgSprite(config))
+    .pipe(dest('build/imgs/sprite'))
+}
+
+const copyImgs = () => {
+	return src('app/imgs/**/*.jpg')
+	  .pipe(dest('build/imgs'))
+}
 
 const buildCss = () => {
   console.log('Компиляция SASS');
@@ -34,12 +58,7 @@ const buildHtml = () => {
     .pipe(browserSync.stream());
 }
 
-const develop = () => {
-  buildCss();
-	buildHtml();
-	browserSyncJob();
-};
-
 exports.server = browserSyncJob;
-exports.build = series(buildCss, buildHtml);
-exports.develop = develop;
+exports.imgs = parallel(copyImgs, makeSpriteSvg);
+exports.build = series(buildCss, buildHtml, makeSpriteSvg, copyImgs);
+exports.develop = series(buildCss, buildHtml, browserSyncJob);

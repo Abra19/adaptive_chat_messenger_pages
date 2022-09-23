@@ -1,5 +1,25 @@
-.logo {
-  width: 25px;
-  height: 40px;
+.rounded-topstart {
+  border-radius: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .rounded-topstart {
+    border-radius: 16px 0 0;
+  }
+}
+
+.icon-small-white {
+  width: 1.5rem;
+  height: 1.5rem;
   fill: $white;
+}
+
+.icon-small-light {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: $light-custom;
+}
+
+.me-2r {
+  margin-right: 2rem;
 }

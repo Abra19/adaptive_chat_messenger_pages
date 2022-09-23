@@ -1,9 +1,11 @@
+$gray-custom: #efefef;
+$primary-custom: #4545a5;
+$light-custom: #fbfbfb;
 $theme-colors: (
-  "gray-custom": #EFEFEF,
-  "primary-custom": #4545A5,
-  "light-custom": #FBFBFB
+  "gray-custom": $gray-custom,
+  "primary-custom": $primary-custom,
+  "light-custom": $light-custom,
 );
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -12,7 +14,6 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1600px
 );
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -20,5 +21,4 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1540px
 );
-
 $enable-shadows: true;

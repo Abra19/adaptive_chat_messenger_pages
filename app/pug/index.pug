@@ -9,11 +9,13 @@ html(lang='ru')
     link(rel='stylesheet' href='./styles/style.css')
 
   body.bg-gray-custom
-  h1.visually-hidden Hexlet Chat Mesenger
-  main(class="container main-decor b-gray-custom")
-    .row
-      .col-4
-        include includes/header.pug
-        include includes/left.pug
-      .col-8(class="d-none d-md-flex flex-column justify-content-center align-items-center")
-        include includes/hello.pug
+    h1.visually-hidden Hexlet Chat Mesenger
+    main(class="container-fluid container-xxl p-0")
+      div(class="row g-0 br-1 b-gray-custom m-0 m-md-4 bg-white")
+        div(class="col-12 col-md-4 p-0 m-0 d-flex flex-column")
+          div.order-header
+            include includes/header.pug
+          div.order-left
+            include includes/contacts.pug
+        div(class="vh-100 col-md-8 d-none d-md-flex flex-column justify-content-center align-items-center border-start border-gray-base p-0")
+          include includes/hello.pug

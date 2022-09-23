@@ -3,7 +3,6 @@ install:
 
 lint:
 	npx stylelint ./app/scss/**/*.scss
-	npx htmlhint ./app/*.html
 
 build:
 	npm run build
@@ -13,3 +12,6 @@ develop:
 
 deploy:
 	npm run deploy
+
+imgs:
+	npx gulp imgs
