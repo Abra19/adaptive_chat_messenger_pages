@@ -59,6 +59,5 @@ const buildHtml = () => {
 }
 
 exports.server = browserSyncJob;
-exports.imgs = parallel(copyImgs, makeSpriteSvg);
-exports.build = series(buildCss, buildHtml, makeSpriteSvg, copyImgs);
-exports.develop = series(buildCss, buildHtml, browserSyncJob);
+exports.build = series(copyImgs, makeSpriteSvg, buildCss, buildHtml);
+exports.develop = series(copyImgs, makeSpriteSvg, buildCss, buildHtml, browserSyncJob);

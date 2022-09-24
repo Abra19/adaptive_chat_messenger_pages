@@ -13,5 +13,4 @@ develop:
 deploy:
 	npm run deploy
 
-imgs:
-	npx gulp imgs
+.PHONY: build
