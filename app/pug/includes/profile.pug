@@ -1,55 +1,46 @@
 -
-  var contacts = {
-    "A": [{
-      name: "Алексей Примадонин",
-      status: "Онлайн",
-      avatar: "./imgs/avatar_3.jpg"
+  let userData = {
+    "country": [{
+      description: "Страна",
+      content: "Москва, Россия",
+      icon: "./imgs/sprite/sprite.svg#globe",
     }],
-
-    "В": [{
-      name: "Вениамин Редакторович",
-      status: "Онлайн",
-      avatar: "./imgs/avatar_4.jpg"
+    "phone": [{
+      description: "Телефон",
+      content: "+7 (499) 123-45-67",
+      icon: "./imgs/sprite/sprite.svg#phone",
     }],
-
-    "Д": [{
-      name: "Джедай Падаванов",
-      status: "Был онлайн вчера",
-      avatar: "./imgs/avatar_2.jpg"
+    "email": [{
+      description: "Email",
+      content: "nikita.m@hexlet.io",
+      icon: "./imgs/sprite/sprite.svg#message",
     }],
-
-    "К": [{
-      name: "Кодовёнок Хекслетович",
-      status: "Был онлайн 3 часа назад",
-      avatar: "./imgs/avatar_1.jpg"
-    },
-    {
-      name: "Королева Верстальщина",
-      status: "Была онлайн вчера",
-      avatar: "./imgs/avatar_5.jpg"
-    }],
-
-    "П": [{
-      name: "Питонист Джангович",
-      status: "Был онлайн вчера",
-      avatar: "./imgs/avatar_6.jpg"
+    "twitter": [{
+      description: "Twitter",
+      content: "@n__mikhaylov",
+      icon: "./imgs/sprite/sprite.svg#people",
     }],
   }
 
   titleAndFind = {
     formName: "Профиль", 
-    formText: "Поиск по контактам"
+    formText: "Поиск по сообщениям"
   }
 
 div(class="bg-white px-4 pt-5 tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab")
   include titleAndFind.pug
-  ul(class="list-group overflow-list")
-    each persons, letter in contacts
-      li(class="list-item list-unstyled")
-        p(class="text-muted mt-5 mb-3")= letter
-        each person in persons
-          a(href="#" class="list-group-item-action action-on-item d-flex text-decoration-none p-4 shadow-sm border-top-0")
-            img.avatar(src= person.avatar)
-            div(class="d-flex flex-column ps-4")
-              h3(class="fw-bold text-dark h6")= person.name
-              p(class="small text-secondary")= person.status
+  div.overflow-list
+    div(class="d-flex flex-column align-items-center p-3 mt-5 mb-3")
+      img(src="imgs/avatar_1.jpg" class="profile-avatar mb-2")
+      h6(class="fw-bold text-dark mb-4") Кодовёнок Хекслетович
+      p(class="small text-muted text-center mb-0") Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+    ul(class="list-group overflow-list py-3")
+      each datas, index in userData
+        each data in datas
+          li(class="list-item list-unstyled")
+            div(class="p-3 d-flex shadow-sm border-top-0 justify-content-between")
+              div(class="d-flex flex-column")
+                p(class="small text-muted m-0")= data.description
+                p(class="small text-dark m-0")= data.content
+              svg(class="icon-small-profile text-black-50")
+                use(xlink:href= data.icon)
