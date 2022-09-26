@@ -41,14 +41,14 @@
     formText: "Поиск по контактам"
   }
 
-div(class="bg-white px-4 pt-5")
+div(class="bg-white px-4 pt-5 tab-pane fade show active" id="contacts" role="tabpanel" aria-labelledby="contacts-tab")
   include titleAndFind.pug
   ul(class="list-group overflow-list")
     each persons, letter in contacts
-      li(class="list-item list-unstyled")
+      li(class="list-item list-unstyled mb-3")
         p(class="text-muted mt-5 mb-3")= letter
         each person in persons
-          a(href="#" class="list-group-item-action action-on-item d-flex text-decoration-none p-4 shadow-sm border-top-0")
+          a(href="#" class="list-group-item-action action-on-contact d-flex text-decoration-none p-4 shadow-sm border-top-0")
             img.avatar(src= person.avatar)
             div(class="d-flex flex-column ps-4")
               h3(class="fw-bold text-dark h6")= person.name

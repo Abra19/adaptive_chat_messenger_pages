@@ -3,12 +3,13 @@
 @import "./components/main.scss";
 @import "./components/header.scss";
 @import "./components/contact.scss";
+@import "./components/chats.scss";
 @import "./components/avatar.scss";
 @import "./general/mixins.scss";
 
 .overflow-list {
   overflow-y: scroll;
-  height: calc(100vh - 280px);
+  height: calc(100vh - 250px);
   @include hide-scrollbar;
 }
 

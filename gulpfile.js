@@ -6,11 +6,6 @@ const pug = require('gulp-pug');
 const svgSprite = require('gulp-svg-sprite');
 const config = {
   mode: {
-    shape: {
-      dimension: {
-        attributes: false
-      }
-    },
     stack: {
         sprite: "../sprite.svg"
     }
