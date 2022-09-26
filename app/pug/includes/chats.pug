@@ -29,7 +29,7 @@
 
 div(class="bg-white px-4 pt-5 tab-pane fade show active" id="chats" role="tabpanel" aria-labelledby="chats-tab")
   include titleAndFind.pug
-  ul(class="list-group overflow-list mt-5")
+  ul(class="list-group overflow-list")
     each persons, index in chatsList
       each person in persons
         li(class="list-item list-unstyled action-on-chat")
