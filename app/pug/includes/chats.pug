@@ -27,9 +27,9 @@
     formText: "Поиск по сообщениям"
   }
 
-div(class="bg-white px-4 pt-5 tab-pane fade" id="chats" role="tabpanel" aria-labelledby="chats-tab")
+div(class="bg-white px-4 pt-5 tab-pane fade overflow-list overflow-list-left-md" id="chats" role="tabpanel" aria-labelledby="chats-tab")
   include titleAndFind.pug
-  ul(class="list-group overflow-list")
+  ul(class="list-group")
     each persons, index in chatsList
       each person in persons
         li(class="list-item list-unstyled action-on-chat")
@@ -40,4 +40,4 @@ div(class="bg-white px-4 pt-5 tab-pane fade" id="chats" role="tabpanel" aria-lab
                 h3(class="fw-bold text-dark h6")= person.name
                 p(class="small text-secondary")=person.time
               p(class="small text-secondary overflow-hidden text-truncate w-custom")= person.message
-            
+ 

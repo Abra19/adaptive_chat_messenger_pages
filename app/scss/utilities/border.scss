@@ -3,13 +3,11 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $value in $sides {
-      @if ($value != "all") {
+      @if $value != "all" {
         .border#{$infix}-#{$value} {
           border-#{$value}: 1px solid $gray-custom !important;
         }
-      }
-
-      @else {
+      } @else {
         .border#{$infix} {
           border: 1px solid $gray-custom !important;
         }
