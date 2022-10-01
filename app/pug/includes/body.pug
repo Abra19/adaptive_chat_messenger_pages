@@ -1,8 +1,8 @@
-body.bg-gray-custom
+body
     h1.visually-hidden Hexlet Chat Mesenger
-    main(class="container-fluid container-xxl p-0 p-md-4")
-      div(class="row g-0 br-1 bg-white")
-        div(class="col-12 col-md-4 p-0 m-0 d-flex flex-column")
+    main(class="container-fluid container-xxl p-0 p-md-4 h-100 bg-gray-custom")
+      div(class="row g-0 radius-md bg-white h-100 overflow-hidden")
+        div(class="col-12 col-md-4 p-0 m-0 d-flex flex-column h-100 overflow-hidden")
           div.order-header
             include header.pug
           div(class="order-left tab-content" id="myTabContent")
