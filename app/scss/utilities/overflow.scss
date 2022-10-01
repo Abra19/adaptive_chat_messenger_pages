@@ -7,6 +7,8 @@
     .overflow-list#{$infix} {
       height: calc(100vh - $header-height-mobile);
       overflow-y: scroll;
+
+      @include hide-scrollbar;
     }
 
     .overflow-list-left#{$infix} {
