@@ -5,6 +5,12 @@ $theme-colors: (
   "gray-custom": $gray-custom,
   "primary-custom": $primary-custom,
   "light-custom": $light-custom,
+  "secondary":  #6c757d,
+  "success":    #28a745,
+  "info":       #17a2b8,
+  "warning":    #ffc107,
+  "danger":     #dc3545,
+  "dark":       #343a40,
 );
 $grid-breakpoints: (
   xs: 0,
