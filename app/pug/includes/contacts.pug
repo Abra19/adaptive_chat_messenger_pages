@@ -46,7 +46,7 @@ div(class="bg-white px-4 pt-5 tab-pane fade show active overflow-list overflow-l
   ul(class="list-group")
     each persons, letter in contacts
       li(class="list-item list-unstyled mb-3")
-        p(class="text-muted mb-2 mt-5")= letter
+        p(class="text-muted mb-2 mt-md-0 mt-md-5")= letter
         each person in persons
           a(href="#" class="list-group-item-action action-on-contact d-flex text-decoration-none p-4 shadow-sm border-top-0")
             img.avatar(src= person.avatar)
