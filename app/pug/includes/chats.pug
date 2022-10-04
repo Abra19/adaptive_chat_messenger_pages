@@ -29,13 +29,13 @@
 
 div(class="bg-white px-4 pt-5 tab-pane fade overflow-list overflow-list-left-md" id="chats" role="tabpanel" aria-labelledby="chats-tab")
   include titleAndFind.pug
-  ul(class="list-group")
+  ul(class="list-group mt-5")
     each persons, index in chatsList
       each person in persons
         li(class="list-item list-unstyled action-on-chat")
-          a(href="#" class="list-group-item-action d-flex text-decoration-none p-4 shadow-sm border-top-0 action-on-link")
+          a(href="#" class="list-group-item-action d-flex text-decoration-none px-3 shadow-sm border-top-0 action-on-link")
             img.avatar(src= person.avatar)  
-            div(class="d-flex flex-column ps-4")
+            div(class="d-flex flex-column p-4")
               div(class="d-flex justify-content-between w-custom")
                 h3(class="fw-bold text-dark h6")= person.name
                 p(class="small text-secondary")=person.time
