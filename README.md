@@ -11,8 +11,8 @@ In this project we create an adaptive Chat Messenger's pages.
 * PUG
 
 
-### [View main page](cooperative-goldfish.surge.sh)
-### [View chat page](cooperative-goldfish.surge.sh/chat.html)
+### [View main page](average-instrument.surge.sh)
+### [View chat page](average-instrument.surge.sh/chat.html)
 ### To get started
 
 1. Clone git repo: `git clone git@github.com:Abra19/layout-designer-project-59.git`
