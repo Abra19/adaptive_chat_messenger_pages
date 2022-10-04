@@ -6,10 +6,14 @@ body
           div.order-header
             include header.pug
           div(class="order-left tab-content" id="myTabContent")
-            include contacts.pug
-            include chats.pug
-            include profile.pug
-            if toggler == "chat"
+            if toggler == "index"
+              include contacts.pug
+              include chats.pug
+              include profile.pug
+            else
+              include chats.pug
+              include contacts.pug
+              include profile.pug
               include messages.pug
         div(class="col-md-8 d-none d-md-block border-start border-gray-base p-0 vh-100")
           if toggler == "index"
