@@ -45,8 +45,8 @@ div(class="container-fluid overflow-list-right-mobile overflow-list-right-deskto
           img(src= messageBlock.avatar class="avatar me-3 d-none d-md-block")
           div
             div(class="bg-primary-custom shadow-sm radius p-4 w-100 w-md-auto")
-              p(class="pb-2 m-0 border-bottom text-light-custom")= messageBlock.message
-              p(class="pt-0 pt-md-1 m-0 small text-light-custom")= messageBlock.status
+              p(class="pb-1 pb-md-2 m-0 border-bottom text-light-custom")= messageBlock.message
+              p(class="pt-1 m-0 small text-light-custom")= messageBlock.status
             div
     else
       div(class="row mb-3 justify-content-start")
@@ -55,7 +55,7 @@ div(class="container-fluid overflow-list-right-mobile overflow-list-right-deskto
           div
             div(class="bg-light-custom shadow-sm radius p-4 w-100 w-md-auto")
               p(class="pb-2 m-0 text-dark fw-bold")= messageBlock.name
-              p(class="pb-2 m-0 text-secondary border-bottom")= messageBlock.message
-              p(class="pt-0 pt-md-1 m-0 small text-secondary")= messageBlock.status
+              p(class="pb-1 pb-md-2 m-0 text-secondary border-bottom")= messageBlock.message
+              p(class="pt-1 m-0 small text-secondary")= messageBlock.status
             div
 include feedback.pug
