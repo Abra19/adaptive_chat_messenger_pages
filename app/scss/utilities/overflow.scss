@@ -6,6 +6,7 @@
 
     .overflow-list#{$infix} {
       height: calc(100vh - $header-height-mobile);
+
       overflow-y: scroll;
 
       @include hide-scrollbar;
@@ -13,6 +14,7 @@
 
     .overflow-list-left#{$infix} {
       height: calc(100vh - $header-height-desktop);
+
       overflow-y: scroll;
 
       @include hide-scrollbar;
@@ -20,6 +22,7 @@
 
     .overflow-list-right-desktop#{$infix} {
       height: calc(100vh - $chat-header-height-desktop);
+
       overflow-y: scroll;
 
       @include hide-scrollbar;
@@ -27,6 +30,7 @@
 
     .overflow-list-right-mobile#{$infix} {
       height: calc(100vh - $chat-header-height-mobile);
+
       overflow-y: scroll;
 
       @include hide-scrollbar;
