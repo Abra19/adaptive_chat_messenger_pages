@@ -50,8 +50,8 @@ div(class="container-fluid overflow-list-right-mobile overflow-list-right-deskto
       div(class="row mb-3 justify-content-start")
         div(class="col-12 col-md-9 d-flex align-items-end")
           img(src= messageBlock.avatar class="avatar me-3 d-none d-md-block")
-          div(class="bg-gray-custom shadow-sm radius p-4 w-100 w-md-auto")
-            p(class="mb-2 text-dark fw-bold h6")= messageBlock.name
-            p(class="pb-2 m-0 text-dark border-bottom-light")= messageBlock.message
-            p(class="pt-1 m-0 small text-light-custom")= messageBlock.status
+          div(class="bg-light-custom shadow-sm radius p-4 w-100 w-md-auto")
+            p(class="mb-2 text-dark fw-bold")= messageBlock.name
+            p(class="pb-2 m-0 text-secondary border-bottom-light")= messageBlock.message
+            p(class="pt-1 m-0 small text-secondary")= messageBlock.status
 include feedback.pug
